@@ -74,5 +74,6 @@ unix:!macx:packagesExist(appindicator-0.1) {
 macx {
     INCLUDEPATH += /usr/local/Cellar/libarchive/3.1.2/include
     LIBS += -L/usr/local/Cellar/libarchive/3.1.2/lib -larchive
+    QMAKE_MAC_SDK = macosx10.12
 }
 
