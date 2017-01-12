@@ -1,9 +1,21 @@
 language: c++
 
 os:
+  - linux
   - osx
 
+addons:
+  apt:
+    packages:
+      - qt5-default
+      - libqt5webkit5-dev
+      - libqt5x11extras5-dev
+      - libarchive-dev
+      - libxcb-keysyms1-dev
+
 matrix:
+  - os: linux
+    dist: trusty
   - os: osx
     osx_image: xcode7.2
 
