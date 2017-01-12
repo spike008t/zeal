@@ -21,3 +21,8 @@ unix:!macx {
 
     INSTALLS += appicons16 appicons24 appicons32 appicons64 appicons128 desktop
 }
+
+macx {
+    TARGET = Zeal
+    ICON = zeal.icns
+}
